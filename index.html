@@ -1,0 +1,103 @@
+<!doctype html>
+<title>ScrollSpy Demo</title>
+
+<script src="scrollspy.js"></script>
+
+<script>
+  new ScrollSpy({
+    blockSelector: function() {
+      return 'article';
+    },
+    linkSelector: function(id) {
+      return 'nav a[href="#'+id+'"]';
+    }
+  });
+</script>
+
+<style>
+  body {
+    width: 400px;
+    padding-top: 40px;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    background: rgba(255,255,255,.8);
+    width: 100%;
+  }
+  a {
+    color: blue;
+    padding: 10px;
+    display: inline-block;
+  }
+  a.active {
+    background: pink;
+  }
+
+  #chapter-one { background: #eee; }
+  #chapter-two { background: #ddd; }
+  #chapter-three { background: #ccc; }
+  #chapter-four { background: #bbb; }
+  #chapter-five { background: #aaa; }
+  #chapter-six { background: #999; }
+</style>
+
+<nav>
+  <a href="#chapter-one">One</a>
+  <a href="#chapter-two">Two</a>
+  <a href="#chapter-three">Three</a>
+  <a href="#chapter-four">Four</a>
+  <a href="#chapter-five">Five</a>
+  <a href="#chapter-six">Six</a>
+</nav>
+
+<article id="chapter-one">
+  <h3>Chapter One</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+</article>
+
+<article id="chapter-two">
+  <h3>Chapter Two</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+</article>
+
+<article id="chapter-three">
+  <h3>Chapter Three</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+</article>
+
+<article id="chapter-four">
+  <h3>Chapter Four</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+</article>
+
+<article id="chapter-five">
+  <h3>Chapter Five</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+</article>
+
+<article id="chapter-six">
+  <h3>Chapter Six</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis malesuada sapien at pretium. Vestibulum placerat neque at sapien sagittis, a faucibus mauris efficitur. Fusce accumsan vitae ex ut lobortis. Cras tincidunt nisi turpis, luctus suscipit nisi rhoncus id. Duis id nibh vitae mi dapibus dapibus. Mauris nec nisl tellus. Nam ac ultrices diam, ut mattis felis. Ut tortor tortor, suscipit eu elit facilisis, egestas commodo massa. Maecenas nec dolor ut est porttitor dictum. Nam vitae elit accumsan, mollis metus eu, hendrerit tortor.</p>
+</article>
