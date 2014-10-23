@@ -6,7 +6,7 @@ _Looking for a better name..._
 
 Highlight links in your navigation as the content scrolls in your viewport.
 
-[View Demo](http://radweb.github.io/scrollspy)
+[View Demo](https://radweb.github.io/ScrollSpy)
 
 ### Usage
 
